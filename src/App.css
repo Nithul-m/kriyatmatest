@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex{
   display: flex;
-  flex-direction: column;
+}
+.aside{
+ width: 26.8%;
+ min-height: 100vh;
+ flex-shrink: 0;
+ background-color: rgb(245, 138, 67)
+ 
+
+}
+.container{
+  width: 80%;
+  padding: 30px 130px 30px 60px;
+  background-color: #f2f2f2;
+  flex-grow: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.mainBox{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  height: 96.5px;
+  
+}
+.header{
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  
+}
+.cost1{
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.cost2{
+  padding: 0.25rem;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+.btn{
+  background: rgb(242, 242, 242);
+  justify-content: center;
+  align-items: center;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  font-weight: 600;
+  color: #2e5db0;
+  font-size: 14px;
+  height: 72px;
+  border-radius: 10px;
+  padding: 20px;
+  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  
+}
+
+.get{
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+}
+.arrow{
+  height: 25px;
+  width: 25px;
+  margin-top: .25ch;
+  margin-right: -8px;
+}
+.div3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header1{
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  
+}
+.upArrow{
+  color: rgb(222, 219, 219);
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.costA{
+  font-size: 20px;
+  font-weight: 700;
+}
+.viewmore{
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.more{
+  padding-right: .75rem;
+  margin-top: .5rem;
+  font-size: 14px;
+  font-weight: 400;
+  width: inherit;
+  white-space: inherit;
+  overflow: inherit;
+  text-overflow: inherit;
+  line-height: 21px;
+}
+.mainBox1{
+  height: inherit;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.div4{
+  border-top: 1px solid rgb(0, 0, 0,0.23);
+  margin-top: .75rem;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.quest{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .75rem;
+}
+.question{
+  font-size: 12px;
+  font-weight: 600;
+  opacity: .5;
+}
+.plus{
+  height: 25px;
+  width: 25px;
+  color: rgb(120, 119, 119);
+  cursor: pointer;
+  border: none;
+  justify-content: center;
+  padding: 0;
+  background-color: white;
+}
+.question1{
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.littleBlue{
+  padding: .75rem;
+  margin-top: 1.25rem;
+  width: 280px;
+  height: 16px;
+  border-radius: 5px;
+  background: #eff5fb;
+  cursor: pointer;
+  transition-delay: 0s;
+}
+.littleBlue2{
+  padding: .75rem;
+  margin-top: 1.25rem;
+  width: 280px;
+  height: 16px;
+  border-radius: 5px;
+  background: #eff5fb;
+  cursor: pointer;
+  transition-delay: 0s;
+  margin-left: 10px;
+}
+.addHover{
+  justify-content: space-between;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.need{
+  display: flex;
+  font-size: 11px;
+  font-weight: 600;
+  color: #2e5db0;
+  align-items: center;
+}
+.returnArrow{
+  width: 15px;
+  margin-right: 5px;
+  
+}
+.spark{
+  width: 15px;
+  margin-right: 5px;
+  color: #2e5db0 ;
+}
+.circle{
+  height: 12px;
+  width: 12px;
+  color: #2e5db0 ;
+}
+.bigBlue{
+  padding: .75rem;
+  margin-top: 1.25rem;
+  width: 350px;
+  height: 250px;
+  border-radius: 5px;
+  background: #eff5fb;
+  cursor: pointer;
+  transition-delay: 0s;
 }
